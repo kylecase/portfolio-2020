@@ -1,11 +1,6 @@
 import React, { useEffect } from 'react'
 import './App.scss'
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  useLocation,
-} from 'react-router-dom'
+import { Route, Switch, useLocation } from 'react-router-dom'
 import { AnimateSharedLayout } from 'framer-motion'
 import Projects from './pages/Projects'
 import Home from './pages/Home'
@@ -21,6 +16,7 @@ import ReactGA from 'react-ga'
 
 function App({ fetchProjects }) {
   let location = useLocation()
+
   useEffect(() => {
     fetchProjects()
   }, [fetchProjects])
@@ -38,18 +34,16 @@ function App({ fetchProjects }) {
       <CssBaseline>
         <AnimateSharedLayout type="crossfade">
           <Container className="portfolio-container" style={{ padding: '0px' }}>
-            <Router>
-              <Switch>
-                <Route exact path="/projects" component={Projects} />
-                <Route
-                  exact
-                  path="/project-detail/:projectId"
-                  component={ProjectDetail}
-                />
-                <Route exact path="/" component={Home} />
-                <Route component={NotFound} />
-              </Switch>
-            </Router>
+            <Switch>
+              <Route exact path="/projects" component={Projects} />
+              <Route
+                exact
+                path="/project-detail/:projectId"
+                component={ProjectDetail}
+              />
+              <Route exact path="/" component={Home} />
+              <Route component={NotFound} />
+            </Switch>
           </Container>
           <Grid container justify="center">
             <Grid item style={{ textAlign: 'center', marginTop: '12px' }}>

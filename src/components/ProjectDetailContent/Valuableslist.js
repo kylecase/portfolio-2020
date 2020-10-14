@@ -29,7 +29,7 @@ const ValaubleslistContent = () => {
       <Typography style={{ marginTop: '12px' }}>
         Valuableslist is a home inventory application, that I built to scratch
         my own itch. When I first moved into my home, I wanted to be able to
-        keep track of all of my valuables just in case I ever need to make an
+        keep track of all of my valuables, just in case I ever need to make an
         insurance claim. I built the app and have used it personally, but it has
         not been publically released. If you're interested in a product like
         this, shoot me an email, I'd love to hear from you.
