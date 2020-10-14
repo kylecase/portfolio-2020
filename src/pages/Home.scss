@@ -1,0 +1,10 @@
+@import 'src/styles/colors.scss';
+
+.home-container {
+  h1 {
+    color: $primary;
+  }
+  p {
+    color: lighten(#000, 30%);
+  }
+}
