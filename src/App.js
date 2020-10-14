@@ -22,7 +22,7 @@ function App({ fetchProjects }) {
   }, [fetchProjects])
 
   useEffect(() => {
-    ReactGA.initialize('240274388')
+    ReactGA.initialize('UA-58895980-5')
   }, [])
 
   useEffect(() => {
