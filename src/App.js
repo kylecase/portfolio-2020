@@ -1,6 +1,11 @@
 import React, { useEffect } from 'react'
 import './App.scss'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  useLocation,
+} from 'react-router-dom'
 import { AnimateSharedLayout } from 'framer-motion'
 import Projects from './pages/Projects'
 import Home from './pages/Home'
@@ -12,11 +17,22 @@ import CssBaseline from '@material-ui/core/CssBaseline'
 import theme from './config/themeConfig'
 import { connect } from 'react-redux'
 import { fetchProjects } from './store/Projects/ProjectSlice'
+import ReactGA from 'react-ga'
 
 function App({ fetchProjects }) {
+  let location = useLocation()
   useEffect(() => {
     fetchProjects()
   }, [fetchProjects])
+
+  useEffect(() => {
+    ReactGA.initialize('UA-58895980-3')
+  }, [])
+
+  useEffect(() => {
+    ReactGA.pageview(location.pathname)
+  }, [location.pathname])
+
   return (
     <MuiThemeProvider theme={theme}>
       <CssBaseline>
