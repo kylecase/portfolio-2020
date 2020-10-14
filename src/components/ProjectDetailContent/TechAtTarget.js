@@ -21,6 +21,13 @@ const TechAtTargetContent = () => {
           />
         </Grid>
       </Grid>
+      <Typography>
+        The Tech@Target blog is a site that allows Target engineers to share
+        stories about the engineering experience and culture at Target. I
+        created initial designs for the site, and I developed the layouts for
+        several areas of the site. The site is built using a Jekyll static site
+        generator. For the front-end, we used Target's design system framework.
+      </Typography>
     </div>
   )
 }
