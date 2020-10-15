@@ -3,7 +3,7 @@ import { Typography, Grid } from '@material-ui/core'
 const AnswersContent = () => {
   return (
     <div>
-      <Typography variant="h1" style={{ fontSize: '2.5em' }}>
+      <Typography variant="h1">
         Target Answers is a self-service tool for solving technology problems
       </Typography>
       <Grid container justify="center" style={{ margin: '16px' }}>

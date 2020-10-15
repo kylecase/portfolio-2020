@@ -3,7 +3,7 @@ import { Typography, Grid } from '@material-ui/core'
 const IncidentCommandContent = () => {
   return (
     <div>
-      <Typography variant="h1" style={{ fontSize: '2.5em' }}>
+      <Typography variant="h1">
         Incident Command is tool for mobilizing, collaborating, and resolving
         major incidents
       </Typography>

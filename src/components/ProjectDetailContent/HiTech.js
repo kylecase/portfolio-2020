@@ -3,7 +3,7 @@ import { Typography, Grid } from '@material-ui/core'
 const HiTechContent = () => {
   return (
     <div>
-      <Typography variant="h1" style={{ fontSize: '2.5em' }}>
+      <Typography variant="h1">
         HiTech is a tool for scheduling appointments at Target's internal
         "Genius Bar"
       </Typography>

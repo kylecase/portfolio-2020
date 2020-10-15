@@ -4,7 +4,7 @@ import ValuableslistUI from '../../svg/valuableslist-ui'
 const ValaubleslistContent = () => {
   return (
     <div>
-      <Typography variant="h1" style={{ fontSize: '2.5em' }}>
+      <Typography variant="h1">
         Valuableslist is the easiest way to keep an inventory of all your
         belongings
       </Typography>

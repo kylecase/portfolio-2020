@@ -4,7 +4,7 @@ import { Grid, Typography } from '@material-ui/core'
 const TechAtTargetContent = () => {
   return (
     <div>
-      <Typography variant="h1" style={{ fontSize: '2.5em' }}>
+      <Typography variant="h1">
         Tech@Target is Target's externally facing blog about our tech
       </Typography>
       <Grid container justify="center" style={{ margin: '16px' }}>

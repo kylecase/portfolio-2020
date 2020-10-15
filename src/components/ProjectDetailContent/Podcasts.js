@@ -3,7 +3,7 @@ import { Grid, Typography } from '@material-ui/core'
 const PodcastsContent = () => {
   return (
     <div>
-      <Typography variant="h1" style={{ fontSize: '2.5em' }}>
+      <Typography variant="h1">
         Target Podcasts is a internal website for hosting Podcasts at Target
       </Typography>
       <Grid container justify="center" style={{ margin: '16px' }}>
