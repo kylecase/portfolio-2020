@@ -12,7 +12,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <Router>
-        <App />
+        <App className="app" style={{ minWidth: '400px' }} />
       </Router>
     </Provider>
   </React.StrictMode>,

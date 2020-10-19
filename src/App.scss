@@ -21,4 +21,10 @@ body {
   margin-top: 32px;
   height: 85vh;
   overflow-y: auto;
+
+  h2.project-detail-title {
+    @media screen and (max-width: 959px) {
+      font-size: 1.5em;
+    }
+  }
 }

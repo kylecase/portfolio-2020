@@ -23,6 +23,7 @@ const ProjectImage = ({ image }) => {
         return (
           <Valuableslist
             style={{ maxHeight: '130px', marginBottom: '-30px' }}
+            className="valuables-list-logo"
           />
         )
       default:

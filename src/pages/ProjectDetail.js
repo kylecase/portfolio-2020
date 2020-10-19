@@ -86,7 +86,7 @@ const ProjectDetail = ({ match, projects }) => {
                   alignItems="center"
                   style={{ minHeight: '100%' }}
                 >
-                  <Grid item xs={2} md={1} style={{ paddingRight: '32px' }}>
+                  <Grid item xs={2} sm={1} style={{ paddingRight: '32px' }}>
                     <ProjectImage image={logo} />
                   </Grid>
                   <Grid item>
@@ -96,7 +96,11 @@ const ProjectDetail = ({ match, projects }) => {
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.3 }}
                       >
-                        <Typography variant="h2" style={{ color: textColor() }}>
+                        <Typography
+                          variant="h2"
+                          style={{ color: textColor() }}
+                          className="project-detail-title"
+                        >
                           {projectTitle}
                         </Typography>
                       </motion.div>
