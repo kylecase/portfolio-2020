@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, Paper, Typography } from '@material-ui/core'
+import { Grid, Paper, Typography, CircularProgress } from '@material-ui/core'
 import { Link } from 'react-router-dom'
 import './ProjectList.scss'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -11,7 +11,7 @@ const ProjectList = ({ projects }) => {
     <div style={{ padding: '24px' }} className="project-list-container">
       <Typography variant="h6">Recent Projects</Typography>
       <Grid container style={{ marginTop: '24px' }} spacing={2}>
-        {projects?.length > 0 &&
+        {projects?.length > 0 ?
           projects.map((project) => {
             const { backgroundColor, logo, id, projectTitle } = project
             return (
@@ -96,7 +96,7 @@ const ProjectList = ({ projects }) => {
                 </motion.div>
               </Grid>
             )
-          })}
+          }) : <CircularProgress/>}
       </Grid>
     </div>
   )
