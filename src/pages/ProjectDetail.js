@@ -1,14 +1,14 @@
 import React from 'react'
 import { Grid, Typography, Paper, Button } from '@material-ui/core'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { connect } from 'react-redux'
 import ProjectImage from '../components/ProjectImage'
 import ProjectMetadata from '../components/ProjectMetadata'
 import BackArrow from '@material-ui/icons/KeyboardBackspaceRounded'
 import ProjectDetailContainer from '../components/ProjectDetailContainer'
-const ProjectDetail = ({ match, projects }) => {
-  const { projectId } = match.params
+const ProjectDetail = ({ projects }) => {
+  const { projectId } = useParams()
   const project = projects.find((project) => project.id === projectId)
   const { backgroundColor, id, logo, metadata, projectTitle } = project || {}
 
@@ -44,7 +44,7 @@ const ProjectDetail = ({ match, projects }) => {
           }}
           elevation={0}
         >
-          <Grid container justify="center">
+          <Grid container justifyContent="center">
             <Grid item xs={12}>
               <div style={{ padding: '16px 0px 0px 16px', backgroundColor }}>
                 <Link
@@ -82,7 +82,7 @@ const ProjectDetail = ({ match, projects }) => {
               >
                 <Grid
                   container
-                  justify="center"
+                  justifyContent="center"
                   alignItems="center"
                   style={{ minHeight: '100%' }}
                 >
@@ -90,7 +90,7 @@ const ProjectDetail = ({ match, projects }) => {
                     <ProjectImage image={logo} />
                   </Grid>
                   <Grid item>
-                    <Grid container justify="center">
+                    <Grid container justifyContent="center">
                       <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}

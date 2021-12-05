@@ -7,7 +7,7 @@ const TechAtTargetContent = () => {
       <Typography variant="h1">
         Tech@Target is Target's externally facing blog about our tech
       </Typography>
-      <Grid container justify="center" style={{ margin: '16px' }}>
+      <Grid container justifyContent="center" style={{ margin: '16px' }}>
         <Grid item xs={11}>
           <img
             src="https://firebasestorage.googleapis.com/v0/b/kyle-portfolio-data.appspot.com/o/techAtTarget2-hd.png?alt=media&token=7c509f25-157e-47b7-8a87-b88e352aeb76"

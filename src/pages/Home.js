@@ -10,7 +10,7 @@ const Home = () => {
       <Grid
         container
         className="home-container"
-        justify="space-between"
+        justifyContent="space-between"
         style={{ padding: '24px' }}
         alignItems="center"
       >

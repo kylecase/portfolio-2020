@@ -1,7 +1,6 @@
 import React from 'react'
 import { Typography } from '@material-ui/core'
 const ProjectMetadata = ({ metadata, textColor }) => {
-  console.log(metadata)
   return (
     <div style={{ padding: '24px' }}>
       {Object.keys(metadata).map((keyName, i) => (

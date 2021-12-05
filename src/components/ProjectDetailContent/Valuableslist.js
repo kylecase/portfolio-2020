@@ -8,7 +8,7 @@ const ValaubleslistContent = () => {
         Valuableslist is the easiest way to keep an inventory of all your
         belongings
       </Typography>
-      <Grid container justify="center" style={{ margin: '16px' }}>
+      <Grid container justifyContent="center" style={{ margin: '16px' }}>
         <Grid item xs={11}>
           <div
             style={{

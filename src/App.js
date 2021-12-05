@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import './App.scss'
-import { Route, Switch, useLocation } from 'react-router-dom'
+import { Route, Routes, useLocation } from 'react-router-dom'
 import { AnimateSharedLayout } from 'framer-motion'
 import Projects from './pages/Projects'
 import Home from './pages/Home'
@@ -34,18 +34,19 @@ function App({ fetchProjects }) {
       <CssBaseline>
         <AnimateSharedLayout type="crossfade">
           <Container className="portfolio-container" style={{ padding: '0px' }}>
-            <Switch>
-              <Route exact path="/projects" component={Projects} />
+            <Routes>
+              <Route exact path="/" element={<Home />} />
+
+              <Route exact path="/projects" element={<Projects />} />
               <Route
                 exact
                 path="/project-detail/:projectId"
-                component={ProjectDetail}
+                element={<ProjectDetail />}
               />
-              <Route exact path="/" component={Home} />
-              <Route component={NotFound} />
-            </Switch>
+              <Route element={<NotFound />} />
+            </Routes>
           </Container>
-          <Grid container justify="center">
+          <Grid container justifyContent="center">
             <Grid item style={{ textAlign: 'center', marginTop: '12px' }}>
               Contact: <br />
               <a href="mailto:kcase@hey.com" style={{ color: '#4a75fb' }}>
