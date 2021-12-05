@@ -31,7 +31,7 @@ const ProjectDetailContainer = ({ project }) => {
   return (
     <Grid
       container
-      justify="center"
+      justifyContent="center"
       style={{ overflowY: 'auto', height: '100%' }}
     >
       <Grid item xs={11} lg={10}>

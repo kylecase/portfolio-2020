@@ -11,7 +11,7 @@ const ProjectList = ({ projects }) => {
     <div style={{ padding: '24px' }} className="project-list-container">
       <Typography variant="h6">Recent Projects</Typography>
       <Grid container style={{ marginTop: '24px' }} spacing={2}>
-        {projects?.length > 0 ?
+        {projects?.length > 0 ? (
           projects.map((project) => {
             const { backgroundColor, logo, id, projectTitle } = project
             return (
@@ -42,7 +42,7 @@ const ProjectList = ({ projects }) => {
                           >
                             <Grid
                               container
-                              justify="center"
+                              justifyContent="center"
                               alignItems="center"
                               style={{ minHeight: '100%' }}
                             >
@@ -96,7 +96,10 @@ const ProjectList = ({ projects }) => {
                 </motion.div>
               </Grid>
             )
-          }) : <CircularProgress/>}
+          })
+        ) : (
+          <CircularProgress />
+        )}
       </Grid>
     </div>
   )

@@ -9,7 +9,7 @@ const IncidentCommandContent = () => {
       </Typography>
       <Grid
         container
-        justify="center"
+        justifyContent="center"
         style={{ marginTop: '16px', marginBottom: '16px' }}
       >
         <Grid item xs={11}>

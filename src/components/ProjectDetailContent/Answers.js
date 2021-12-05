@@ -6,7 +6,7 @@ const AnswersContent = () => {
       <Typography variant="h1">
         Target Answers is a self-service tool for solving technology problems
       </Typography>
-      <Grid container justify="center" style={{ margin: '16px' }}>
+      <Grid container justifyContent="center" style={{ margin: '16px' }}>
         <Grid item xs={11}>
           <img
             src="https://firebasestorage.googleapis.com/v0/b/portfolio-2020-6cd16.appspot.com/o/answers.png?alt=media&token=51482d14-02a1-46ff-acc0-45232ae6540e"

@@ -7,7 +7,7 @@ const HiTechContent = () => {
         HiTech is a tool for scheduling appointments at Target's internal
         "Genius Bar"
       </Typography>
-      <Grid container justify="center" style={{ margin: '16px' }}>
+      <Grid container justifyContent="center" style={{ margin: '16px' }}>
         <Grid item xs={11}>
           <img
             src="https://firebasestorage.googleapis.com/v0/b/kyle-portfolio-data.appspot.com/o/hitech-lg.png?alt=media&token=a511c7ad-fd07-40b9-9dcf-feec1d514585"

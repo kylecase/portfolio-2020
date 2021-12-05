@@ -6,7 +6,7 @@ const PodcastsContent = () => {
       <Typography variant="h1">
         Target Podcasts is a internal website for hosting Podcasts at Target
       </Typography>
-      <Grid container justify="center" style={{ margin: '16px' }}>
+      <Grid container justifyContent="center" style={{ margin: '16px' }}>
         <Grid item xs={11}>
           <img
             src="https://firebasestorage.googleapis.com/v0/b/kyle-portfolio-data.appspot.com/o/podcasts-hd.png?alt=media&token=0fbb72c4-25e7-42fb-ad4d-6b8bb6a46dfd"
