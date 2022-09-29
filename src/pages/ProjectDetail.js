@@ -31,14 +31,11 @@ const ProjectDetail = ({ projects }) => {
       style={{
         backgroundColor: 'white',
         borderRadius: '15px',
-        height: 'inherit',
-        overflow: 'hidden',
       }}
     >
-      <motion.div layoutId={id} style={{ height: '20%' }}>
+      <motion.div layoutId={id}>
         <Paper
           style={{
-            height: '100%',
             borderRadius: '0px',
             backgroundColor,
           }}
@@ -84,9 +81,10 @@ const ProjectDetail = ({ projects }) => {
                   container
                   justifyContent="center"
                   alignItems="center"
-                  style={{ minHeight: '100%' }}
+                  style={{ height: '100%', paddingBottom: '32px' }}
+                  spacing={3}
                 >
-                  <Grid item xs={2} sm={1} style={{ paddingRight: '32px' }}>
+                  <Grid item xs={2} sm={1}>
                     <ProjectImage image={logo} />
                   </Grid>
                   <Grid item>
@@ -113,12 +111,14 @@ const ProjectDetail = ({ projects }) => {
         </Paper>
       </motion.div>
 
-      <Grid container style={{ height: '80%' }}>
+      <Grid container>
         <Grid
           item
           xs={12}
           md={8}
-          style={{ paddingTop: '0px', maxHeight: '100%', overflowY: 'auto' }}
+          style={{
+            overflowY: 'auto',
+          }}
         >
           <motion.div
             initial={{ opacity: 0 }}
@@ -135,11 +135,14 @@ const ProjectDetail = ({ projects }) => {
           md={4}
           style={{
             paddingTop: '0px',
-            height: '100%',
           }}
         >
           <motion.div
-            style={{ height: '100%', backgroundColor: '#d8d8d8' }}
+            style={{
+              height: '100%',
+              backgroundColor: '#d8d8d8',
+              marginBottom: '-24px',
+            }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
