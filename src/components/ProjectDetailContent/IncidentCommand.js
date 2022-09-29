@@ -1,5 +1,6 @@
 import React from 'react'
 import { Typography, Grid } from '@material-ui/core'
+import IncImg from '../../images/incident-command-ui.png'
 const IncidentCommandContent = () => {
   return (
     <div>
@@ -14,7 +15,7 @@ const IncidentCommandContent = () => {
       >
         <Grid item xs={11}>
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/portfolio-2020-6cd16.appspot.com/o/incident-command-ui.png?alt=media&token=8fec8f58-ad76-4293-bfa2-707ed1435ea6"
+            src={IncImg}
             alt="Incident Command Screen Shot"
             style={{
               maxWidth: '100%',
