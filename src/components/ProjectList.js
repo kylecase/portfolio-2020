@@ -44,7 +44,7 @@ const ProjectList = ({ projects }) => {
                               container
                               justifyContent="center"
                               alignItems="center"
-                              style={{ minHeight: '100%' }}
+                              style={{ minHeight: '100%', textAlign: 'center' }}
                             >
                               <Grid item xs={6}>
                                 <ProjectImage image={logo} />

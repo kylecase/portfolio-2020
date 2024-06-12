@@ -1,6 +1,6 @@
 import React from 'react'
 import { Grid, Typography } from '@material-ui/core'
-
+import TechAtTargetImg from '../../images/tech-at-target-lg.png'
 const TechAtTargetContent = () => {
   return (
     <div>
@@ -10,7 +10,7 @@ const TechAtTargetContent = () => {
       <Grid container justifyContent="center" style={{ margin: '16px' }}>
         <Grid item xs={11}>
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/kyle-portfolio-data.appspot.com/o/techAtTarget2-hd.png?alt=media&token=7c509f25-157e-47b7-8a87-b88e352aeb76"
+            src={TechAtTargetImg}
             alt="Tech at Target Screen Shot"
             style={{
               width: '100%',

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Grid, Typography } from '@material-ui/core'
+import PodImg from '../../images/podcasts-hd.png'
 const PodcastsContent = () => {
   return (
     <div>
@@ -9,7 +10,7 @@ const PodcastsContent = () => {
       <Grid container justifyContent="center" style={{ margin: '16px' }}>
         <Grid item xs={11}>
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/kyle-portfolio-data.appspot.com/o/podcasts-hd.png?alt=media&token=0fbb72c4-25e7-42fb-ad4d-6b8bb6a46dfd"
+            src={PodImg}
             alt="Hi Tech Screen Shot"
             style={{
               width: '100%',

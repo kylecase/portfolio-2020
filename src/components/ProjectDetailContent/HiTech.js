@@ -1,5 +1,6 @@
 import React from 'react'
 import { Typography, Grid } from '@material-ui/core'
+import HiTechImg from '../../images/hitech-lg.png'
 const HiTechContent = () => {
   return (
     <div>
@@ -10,7 +11,7 @@ const HiTechContent = () => {
       <Grid container justifyContent="center" style={{ margin: '16px' }}>
         <Grid item xs={11}>
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/kyle-portfolio-data.appspot.com/o/hitech-lg.png?alt=media&token=a511c7ad-fd07-40b9-9dcf-feec1d514585"
+            src={HiTechImg}
             alt="Hi Tech Screen Shot"
             style={{
               width: '100%',
