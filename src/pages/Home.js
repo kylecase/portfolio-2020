@@ -1,6 +1,6 @@
 import React from 'react'
 import { Grid, Typography } from '@material-ui/core'
-import './Home.scss'
+import './Home.css'
 import Minnesota from '../svg/Minnesota'
 import ProjectList from '../components/ProjectList'
 

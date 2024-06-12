@@ -1,7 +1,7 @@
 import React from 'react'
 import { Grid, Paper, Typography, CircularProgress } from '@material-ui/core'
 import { Link } from 'react-router-dom'
-import './ProjectList.scss'
+import './ProjectList.css'
 import { motion, AnimatePresence } from 'framer-motion'
 import { connect } from 'react-redux'
 import ProjectImage from './ProjectImage'

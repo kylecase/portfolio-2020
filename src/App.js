@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import './App.scss'
+import './App.css'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import { AnimateSharedLayout } from 'framer-motion'
 import Projects from './pages/Projects'
